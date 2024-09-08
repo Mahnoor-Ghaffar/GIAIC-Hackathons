@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('resume-form') as HTMLFormElement;
     const resumeOutput = document.getElementById('resumeOutput') as HTMLDivElement;
 
+    // Prevent form from submitting and refresh
     form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        event.preventDefault(); // Prevents the page from refreshing
 
+        // Collecting values from form inputs
         const name = (document.getElementById('name') as HTMLInputElement).value;
         const email = (document.getElementById('email') as HTMLInputElement).value;
         const phone = (document.getElementById('phone') as HTMLInputElement).value;
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const endDate = (document.getElementById('endDate') as HTMLInputElement).value;
         const skills = (document.getElementById('skills') as HTMLInputElement).value;
 
+        // Dynamically generating resume HTML
         const resumeHtml = `
             <h1>${name}</h1>
             <p>Email: ${email}</p>
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
+        // Display the generated resume in the resumeOutput div
         resumeOutput.innerHTML = resumeHtml;
     });
 });
