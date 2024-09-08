@@ -153,3 +153,124 @@
       font-size: 1em;
   }
 }
+:root{
+  --bg-color:#e3edf7;
+  --gradient-white-bg:linear-gradient(0deg,#fff 0%,#edf4fa 51%,#e5eef7 100%);
+  --gradient-color-bg:linear-gradient(180deg,rgba(247,1,120,1)0%,
+                                              rgba(160,8,156,1)51%,
+                                              rgba(99,13,178,1)100%);
+  --main-color:#e6006d;
+  --font-color:#90979f;
+  --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
+                     rgba(0,0,0,0.23)0px 6px 6px;     
+  --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);                                                          
+}
+.btn{
+  background: var(--gradient-color-bg);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+.main-text{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-text .heading{
+  color: var(--main-color);
+  font-size: 35px;
+}
+
+.main-text span{
+  color: var(--font-color);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+/* //////////////////////// */
+.form-start{
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 2em;
+
+}
+.contact-info{
+  width: 70%;
+  background: linear-gradient(0deg,#fff 0%,#edf4fa 51%,#e5eef7 100%);
+  box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+.contact-info input,
+.contact-info form textarea{
+  width: 100%;
+}
+
+.contact-info form input,
+.contact-info form textarea{
+  /* width: 100%; */
+  padding: .8rem;
+  border: 2px solid #e8e1e1;
+  margin: .5rem 0;
+  background: #e8f1f9;
+  border-radius: 5px;
+  outline: none;
+  transition: .3s;
+  width: 90%;
+}
+
+.contact-info form .input-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+form input:focus,form textarea:focus{
+  filter: brightness(100%);
+  background: #d2e9ff;
+  border: 2px solid #f8caca;
+}
+
+form textarea{
+  resize: none;
+}
+
+form .btn{
+  padding: 15px 20px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+fieldset {
+  width: 95%;
+  margin-top: 50px;
+  font-size: 25px;
+  color: var(--main-color);
+  align-self: center;
+  border-radius: 20px;
+}
+
+input,textarea {
+  width: calc(100%-1px);
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* -----------------------resume output --------------------*/
+#resumeOutput{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #3498bd;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
