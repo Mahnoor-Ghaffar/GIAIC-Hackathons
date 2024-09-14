@@ -1,5 +1,4 @@
 
-
 :root{
   --bg-color:#e3edf7;
   --gradient-white-bg:linear-gradient(0deg,#fff 0%,#edf4fa 51%,#e5eef7 100%);
@@ -13,12 +12,12 @@
   --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);                                                          
 }
 .btn{
-  background: var(--gradient-color-bg);
   color: #fff;
   padding: 8px 10px;
   border-radius: 5px;
   font-weight: 500;
-  transition: all .3s ease;
+  transition: all .3s ease; 
+  background: linear-gradient(180deg, rgba(247,1,120,1) 0%, rgba(160,8,156,1) 51%, rgba(99,13,178,1) 100%);
 }
 .main-text{
   width: 100%;
@@ -45,7 +44,7 @@ gap: 2em;
 
 }
 .contact-info{
-  width: 70%;
+  width: 82%;
   background: linear-gradient(0deg,#fff 0%,#edf4fa 51%,#e5eef7 100%);
   box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
   padding: 1rem;
@@ -102,6 +101,7 @@ fieldset {
   color: var(--main-color);
   align-self: center;
   border-radius: 20px;
+  width: 90%;
 }
 
 input,textarea {
@@ -117,8 +117,56 @@ input,textarea {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  border: 2px solid #3498bd;
+  border: 2px solid var(--main-color);
   background-color: aliceblue;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
+#resumeOutput h1{
+  color: var(--main-color);
+}
+
+#resumeOutput h3,p{
+  font-size: 20px;
+}
+
+#resumeOutput a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ---------------profile pic --------------*/
+.profilePicture {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 4px 8px rgba(11,7,211,0.5);
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* -----------download btn --------------- */
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(247,1,120,1) 0%, rgba(160,8,156,1) 51%, rgba(99,13,178,1) 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background: var(--main-color);
+  box-shadow: var(--hover-box-shadow);
+}
+
+.download-btn:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+}

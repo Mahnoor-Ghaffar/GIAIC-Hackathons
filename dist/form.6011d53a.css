@@ -1,56 +1,161 @@
-#resume-form {
-  background-color: #f4f4f9;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  box-shadow: 0 0 10px #0000001a;
+:root {
+  --bg-color: #e3edf7;
+  --gradient-white-bg: linear-gradient(0deg, #fff 0%, #edf4fa 51%, #e5eef7 100%);
+  --gradient-color-bg: linear-gradient(180deg, #f701780% , #a0089c51% , #630db2100% );
+  --main-color: #e6006d;
+  --font-color: #90979f;
+  --hover-box-shadow: #000000300px 10px 20px, #0000003b0px 6px 6px;
+  --gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
 }
 
-#resume-form h2 {
-  color: #333;
-  border-bottom: 2px solid #35a1a1;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
-}
-
-#resume-form label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-  display: block;
-}
-
-#resume-form input[type="text"], #resume-form input[type="email"], #resume-form input[type="tel"], #resume-form input[type="date"], #resume-form input[type="number"] {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-#resume-form button {
+.btn {
   color: #fff;
-  cursor: pointer;
-  background-color: #35a1a1;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 16px;
-  transition: background-color .3s;
+  background: linear-gradient(#f70178 0%, #a0089c 51%, #630db2 100%);
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: 500;
+  transition: all .3s;
 }
 
-#resume-form button:hover {
-  background-color: #2d8c8c;
+.main-text {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-#resume-form input:focus {
-  border-color: #35a1a1;
+.main-text .heading {
+  color: var(--main-color);
+  font-size: 35px;
+}
+
+.main-text span {
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.form-start {
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  display: flex;
+}
+
+.contact-info {
+  background: linear-gradient(0deg, #fff 0%, #edf4fa 51%, #e5eef7 100%);
+  border-radius: 10px;
+  width: 82%;
+  padding: 1rem;
+  box-shadow: 0 2px 4px #0000002e;
+}
+
+.contact-info input, .contact-info form textarea {
+  width: 100%;
+}
+
+.contact-info form input, .contact-info form textarea {
+  background: #e8f1f9;
+  border: 2px solid #e8e1e1;
+  border-radius: 5px;
   outline: none;
+  width: 90%;
+  margin: .5rem 0;
+  padding: .8rem;
+  transition: all .3s;
 }
 
-#resume-form .form-group {
-  margin-bottom: 20px;
+.contact-info form .input-box {
+  justify-content: space-between;
+  display: flex;
+}
+
+form input:focus, form textarea:focus {
+  filter: brightness();
+  background: #d2e9ff;
+  border: 2px solid #f8caca;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .btn {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+fieldset {
+  color: var(--main-color);
+  border-radius: 20px;
+  align-self: center;
+  width: 90%;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+input, textarea {
+  width: calc(100%-1px);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 8px;
+}
+
+#resumeOutput {
+  border: 2px solid var(--main-color);
+  background-color: #f0f8ff;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px #00000080;
+}
+
+#resumeOutput h1 {
+  color: var(--main-color);
+}
+
+#resumeOutput h3, p {
+  font-size: 20px;
+}
+
+#resumeOutput a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.profilePicture {
+  border: 2px solid var(--main-color);
+  object-fit: cover;
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px #0b07d380;
+}
+
+.download-btn {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(#f70178 0%, #a0089c 51%, #630db2 100%);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .3s, box-shadow .3s;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  background: var(--main-color);
+  box-shadow: var(--hover-box-shadow);
+}
+
+.download-btn:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
 }
 /*# sourceMappingURL=form.6011d53a.css.map */

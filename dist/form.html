@@ -2,54 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
-    <script src="https://kit.fontawesome.com/727043cdfa.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Resume</title>
     <link rel="stylesheet" href="/form.6011d53a.css">
 </head>
 <body>
-    <form id="resume-form">
-        <h2>Personal Information</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" required=""><br>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" required=""><br>
-      
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" required=""><br>
-      
-        <h2>Education</h2>
-        <label for="university">University:</label>
-        <input type="text" id="university" required=""><br>
-      
-        <label for="degree">Degree:</label>
-        <input type="text" id="degree" required=""><br>
-      
-        <label for="gpa">GPA:</label>
-        <input type="number" step="0.01" id="gpa" required=""><br>
-      
-        <h2>Work Experience</h2>
-        <label for="jobTitle">Job Title:</label>
-        <input type="text" id="jobTitle" required=""><br>
-      
-        <label for="company">Company:</label>
-        <input type="text" id="company" required=""><br>
-      
-        <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" required=""><br>
-      
-        <label for="endDate">End Date:</label>
-        <input type="date" id="endDate"><br>
-      
-        <h2>Skills</h2>
-        <label for="skills">Skills (comma-separated):</label>
-        <input type="text" id="skills" required=""><br>
-      
-        <button type="submit">Generate Resume</button>
-      </form>
 
-      <script src="/form.cce5b843.js"></script>
-      
+    <section class="form-start">
+        <div class="contact-info">
+            <div class="main-text">
+                <h2 class="heading">Genrate Resume</h2>
+                <span>Get Heired Easily</span>
+            </div>
+            
+            <form id="resumeForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <!--  Unique path -->
+                    <label for="username">Resume URL</label>
+                    <input type="text" id="username" name="username" required=""> <br>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required="">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required="">
+
+                    <!-------------- profile picture ------------>
+                <label for="profilePicture"> Profile Picture</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required="">
+
+                </fieldset>
+
+                
+                <fieldset class="fieldset">
+                    <legend>Education</legend>
+                    <label for="education">Education:</label><br>
+                    <textarea name="education" id="education" rows="4" required=""></textarea>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>Experience</legend>
+                    <label for="experience">Experience:</label><br>
+                    <textarea name="experience" id="experience" rows="4" required=""></textarea>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>Skills</legend>
+                    <label for="skills">Skills:</label><br>
+                    <textarea name="skills" id="skills" rows="4" required=""></textarea>
+                </fieldset>
+
+                <div class="sub-btn" style="padding: 10px 0">
+                    <button type="submit" class="btn">Generate Resume Below</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div id="resumeOutput">
+        <!-- Resume will be generated here -->
+    </div>
+
+    <script src="/form.0cd0c94c.js"></script>
 <script src="/form.dc61df93.js"></script></body>
 </html>

@@ -349,62 +349,6 @@ section{
     font-size: 1.2rem;
 }
 
-/* ==================== About section css code ============================ */
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
-.about .about-img{
-    position: relative;
-}
-
-.about .about-img .aboutHero{
-    width: 40vw;
-    height: auto;
-}
-
-.about-img .ring{
-    position: absolute;
-    top: 22%;
-    right: 1%;
-}
-
-.about-img .circle{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-
-.about-content{
-    padding: 3rem 0;
-}
-
-.about-content h2{
-    color: var(--main-color);
-}
-
-.about-content h3{
-    font-size: 2.1rem;
-    line-height: 3rem;
-    margin: .5rem 0;
-}
-
-.about-content p{
-    color: var(--font-color);
-}
-
-.text-box p{
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.about-btn{
-    margin: .8rem 0;
-}
 
 .about-btn button,.cvContent a{
     background: var(--gradient-white-bg2);
